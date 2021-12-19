@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_11</title>
+    <script>
+        
+        // Obtain the time
+        let time = parseInt(prompt("Inform Brasília's time: "));
+
+        // Obtain the place
+        let place = prompt("Choose the country you wish to know the time of: \n1)Mexico \n2)Japan \n3)England");
+
+        // Conditional to check the time
+        let convertedTime
+        
+        if(place == 1){
+            convertedTime = (time - 3);
+        }else if(place == 2){
+            convertedTime = (time + 12);
+        }else{
+            convertedTime = (time + 3);
+        }
+
+        // In case the time surpass 23
+        if(convertedTime > 23){
+
+            // In case the time is exactly 24
+            if(convertedTime == 24){
+                alert("0:00")
+            }else{
+                alert((convertedTime - 24) + ":00");
+            }
+
+        }else{
+            alert(convertedTime + ":00");
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

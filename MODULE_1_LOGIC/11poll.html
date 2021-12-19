@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll</title>
+    <script>
+
+        // Menu
+        let menu = "***MENU***\n";
+            menu += "1) Ana\n";
+            menu += "2) João\n";
+            menu += "3) Jaqueline\n";
+            menu += "4) Paulo \n";
+            menu += "5) End poll!"; 
+
+        // Poll
+        let poll;
+
+        // Counters
+        let ana = 0, joao = 0, paulo = 0, jaqueline = 0;
+
+        // do while loop
+        do{
+
+            poll = prompt(menu);
+
+            switch(poll){
+                case "1": ana++; break;
+                case "2": joao++; break;
+                case "3": jaqueline++; break;
+                case "4": paulo++; break;
+                case"5": alert("Poll ended successfully"); break;
+                default: alert("Invalid option");
+            }
+
+        }while(poll != 5)
+        
+        // Outcome of the poll
+        document.write("Ana obtained "+ana+" vote(s)<br>");
+        document.write("João obtained "+joao+" vote(s)<br>");
+        document.write("Jaqueline obtained "+jaqueline+" vote(s)<br>");
+        document.write("Paulo obtained "+paulo+" vote(s)<br>");
+
+        // Total 
+        let total = ana + joao + jaqueline + paulo; 
+
+        // Calculate the percentage 
+        let percentagelAna = (100/total) * ana;
+        let percentageJoao = (100/total) * joao;
+        let percentageJaqueline = (100/total) * jaqueline;
+        let percentagePaulo = (100/total) * paulo;
+
+        // Display the percentage
+        document.write("<hr>");
+        document.write("Ana "+percentageAna.toFixed(2)+"%<br>");
+        document.write("João "+percentageJoao.toFixed(2)+"%<br>");
+        document.write("Jaqueline "+percentageJaqueline.toFixed(2)+"%<br>");
+        document.write("Paulo "+percentagePaulo.toFixed(2)+"%<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

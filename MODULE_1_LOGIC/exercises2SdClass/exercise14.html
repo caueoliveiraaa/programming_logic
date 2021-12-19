@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_14</title>
+    <script>
+
+        // Obtain wage
+        let wage = parseInt(prompt("Informe seu salário"));
+
+        // Obtain bills
+        let eletricityBill = parseInt(prompt("How much is spent with the eletricity bill?"));
+        let telephoneBill = parseInt(prompt("How much is spent with the telephone bill?"));
+        let waterBill = parseInt(prompt("How much is spent with the water bill?"));
+        let supermarketBill = parseInt(prompt("How much is spent at the supermarket?"));
+        let leisureExpenses = parseInt(prompt("How much is spent with leisure?"));
+        let rentBill = parseInt(prompt("How much is spent with the rent bill?"));
+
+        // Calculation
+        let calculation = wage - (eletricityBill+telephoneBill+waterBill+supermarketBill+leisureExpenses+rentBill);
+
+        // Message
+        alert("In the end of the month you will have R$"+calculation+" reais available for yourself.");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

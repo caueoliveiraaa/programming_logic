@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional_Array</title>
+    <script>
+
+        // 1 - Multidimensional array = an array that stores several types of information
+        // 2 - JavaScript does not provide the multidimensional array natively 
+        // 3 - However, you can create a multidimensional array by defining an array of elements
+        //     where each element is also another array, for this reason
+        //     we can say that a JavaScript multidimensional array is an array of arrays
+
+        let data = [
+            
+            ["Ana", 31],
+            ["Gustavo", 22],
+            ["Rebeca", 41]
+
+        ];
+
+        // Same function as (console.log) but, this one displays the information as a table 
+        console.table(data);    
+
+        // Display on the browser:
+        for (let i = 0; i < data.length; i++) {
+
+            // First square brackets [] for the lines and the second [] for the columns
+            document.write(data[i][0]+"<br>");
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+

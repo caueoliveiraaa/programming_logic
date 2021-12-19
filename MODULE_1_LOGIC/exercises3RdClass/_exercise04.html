@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <script>
+
+        // 1 -  Create a loop that asks for many numbers, while the typed values is different than 0, keep asking for a number. 
+        // 2 -  When 0 is informed, display the sum of all the values.
+        
+        let number;
+        let sum = 0;
+
+        while (number != 0){
+            number = parseInt(prompt("Type a number that is different than zero: "));
+            sum+= number;            
+        }
+
+        alert("You have typed in 0, this stops the program! \nThe sum of all numbers is: " + sum+"!");
+            
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

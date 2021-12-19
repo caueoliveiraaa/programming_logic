@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One_Dimensional_Array</title>
+    <script>
+
+        // 1 - One-dimensional array 
+        // 2 - An array that stores only one type of information (display information via lines)
+        // 3 - A one-dimensional array is a structured collection of components, often called array elements
+        //     It can be accessed individually by specifying the position of a component with a single index value
+        // 4 - The mothod push() adds one or more elements to the end of an array and returns the new lenght of it
+
+        // Variable name
+        let name;
+
+        // Array
+        let data = [];
+
+        // The following loop with (do) will make sure the block of code is executed at least once
+        do{
+
+            name = prompt("Please, inform a name: ");
+
+            // Add to array, in case a name is informed:
+            if (name != "") {
+                data.push(name);
+            }
+
+        }while(name != "");
+
+        // Listing names
+        for(let i = 0; i < data.length; i++) {
+
+            document.write("The "+(i+1)+"º name is: "+data[i]+"<br>");
+
+        } 
+
+        // Console (for tests)
+        console.log(data);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

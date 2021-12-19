@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical_Operators</title>
+    <script>
+
+        // Logical operators
+        // && = and
+        // || = or
+
+        // Obtain the value of the purchase
+        let value = prompt("Informe o value da compra: ");
+
+        // Obtain the type of purchase
+        let typeOfPayment = prompt("1) Cash \n2) Installments");
+
+        // Conditional 
+        if(value >= 100 && typeOfPayment == "1"){
+            alert("R$" + value * 0.9);
+        }else{
+            alert("R$" + value);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

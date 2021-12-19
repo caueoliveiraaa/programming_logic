@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <script>
+        // 1 - The user informs a number
+        // 2 - Return the ten predecessors and the ten successors
+        // 3 - Example: If 100 is informed, return: 90, 91, 92, 93, 94, 95, 96, 97, 98, 99,
+        // 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110
+
+        let number = parseInt(prompt("Inform the number: "));
+        let lowest = number-10
+        let greatest = number+10
+
+        while(lowest <= greatest){
+            document.write(greatest+"\n"+lowest+"<br>");
+            lowest++;
+            greatest--;
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

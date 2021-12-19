@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_12</title>
+    <script>
+
+        // Obtain the type of temperature 
+        let temperatura = prompt("1) Fahrenheit para Celsius \n2) Celsius para Fahrenheit");
+
+        // Obtain the value
+        let value = prompt("Informe o value");
+
+        // Conditional
+        if(temperatura == 1){
+            let calculation = ((value - 32)/1.8);
+            alert("Celsius "+calculation.toFixed(0));
+        }else{
+            let calculation = ((value * 1.8)+32);
+            alert("Fahrenheit "+calculation.toFixed(0));
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

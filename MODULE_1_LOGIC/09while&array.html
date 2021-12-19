@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While_And_Array</title>
+    <script>
+
+        // 1 - Print the amount of cities
+        // 2 - The <hr> tag breaks a line and prints a line too
+
+        let cities = ["Blumenau", "Indaial", "Brusque", "Timbó", "Florianópolis", "Joinville", "Jaraguá do Sul"]; // List of cities
+        let attempt = prompt("Inform the name of a famous city in Santa Catarina: "); // Ask the user for a city
+        let exists = false; // If the city exists
+        let i = 0; // Loop
+
+        // While
+        while(i < cities.length){
+            if(cities[i].indexOf(attempt) != -1){
+                document.write(cities[i]+"<br>");
+                exists = true;
+            }
+            i++;
+        }
+
+        // Conditional
+        if(exists == false) {
+            document.write("This city does not exist in this program. Please, try again.");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

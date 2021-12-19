@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_05</title>
+    <script>
+
+        // 1 - Create a system to convert currencies
+        // 2 - Inform if the conversion will be from Reais to Dollars or form Dollars to Reais 
+        // 3 - Inform the value and return the conversion
+        // 4 - The base value will be R$5,50
+        // 5 - Therefore, if R$1,00 is informed and the option Dollar to Real is selected, the system will return R$5,50
+        // 6 - Another example: if R$5,50 is informed and the option Reais to Dollars is selected, the system will return US1,00
+
+        // Obtain the type of currency
+        let currency = prompt("1) Reais to Dollars \n2) Dollars to Reais");
+
+        // Obter o valor
+        let value = prompt("Inform the value: ");
+
+        // Conditional
+        if(currency == 1){
+            alert("U$ "+(value / 5.5).toFixed(2));
+        }else{
+            alert("R$ "+(value * 5.5).toFixed(2));
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
